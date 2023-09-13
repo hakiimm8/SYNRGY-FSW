@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@layer components {
+  .accordion-header {
+    @apply py-4 px-6 cursor-pointer;
+  }
+  .accordion-body {
+    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out;
+  }
+}
+
+.chevron.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s; /* This adds a smooth transition effect */
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+/* testimonial css */
+#testimonial {
+  height: 560px;
+}
+#testimonial .container-fluid {
+  padding-top: 100px;
+}
+#testimonial h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+#testimonial p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.bi-chevron-left::before,
+.bi-chevron-right::before {
+  vertical-align: inherit;
+  padding: 8px;
+  border-radius: 32px;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  border-radius: 32px;
+  border: solid 1px #c4c4c4;
+  margin-right: 24px;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #5cb85f;
+  margin-right: 26px;
+  border: none;
+}
+#testimonial .item {
+  width: 619px;
+  height: 270px;
+  background: #f1f3ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+}
+#testimonial .img {
+  width: 80px;
+  height: 80px;
+  margin: 95px 46px;
+}
+#testimonial .testimoni {
+  margin: 69px 32px 69px 0px;
+}
+#testimonial .checked {
+  color: #f9cc00;
+}
+#testimonial .quote {
+  width: 415px;
+  text-align: left;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 8px 0px;
+}
+#testimonial .name {
+  width: 415px;
+  text-align: left;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 8px 0px;
+}
+/* /testimonial css */
