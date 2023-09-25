@@ -1,2 +1,2 @@
 # SYNRGY Academy Bootcamp
-Repository for my SYNRGY Academy Bootcamp Course 1
+Repository for my SYNRGY Academy bootcamp.
