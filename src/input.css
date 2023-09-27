@@ -127,4 +127,66 @@ body {
   color: #000000;
   margin: 8px 0px;
 }
+
+@media (max-width: 1279px) {
+  #testimonial {
+    height: auto;
+  }
+  #testimonial .container-fluid {
+    padding-top: 80px;
+    margin-top: 0px;
+  }
+  #testimonial .item {
+    width: 450px;
+    height: 330px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #testimonial .img {
+    width: 80px;
+    height: 80px;
+    margin: 40px auto;
+    margin-bottom: 0px;
+  }
+  #testimonial .testimoni {
+    margin: 24px 32px;
+  }
+  #testimonial .quote {
+    width: 100%;
+  }
+  #testimonial .name {
+    width: 100%;
+  }
+}
+
+@media (max-width: 959px) {
+  #testimonial {
+    height: 650px;
+  }
+  #testimonial .container-fluid {
+    padding-top: 100px;
+    margin-top: 0px;
+  }
+  #testimonial .item {
+    width: 328px;
+    height: 372px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #testimonial .img {
+    width: 80px;
+    height: 80px;
+    margin: 40px auto;
+    margin-bottom: 0px;
+  }
+  #testimonial .testimoni {
+    margin: 24px 32px;
+  }
+  #testimonial .quote {
+    width: 100%;
+  }
+  #testimonial .name {
+    width: 100%;
+  }
+}
 /* /testimonial css */

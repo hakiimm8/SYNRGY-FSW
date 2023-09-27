@@ -11,14 +11,19 @@ window.onscroll = function () {
 };
 
 // Hamburger
-// const hamburger = document.querySelector("#hamburger");
-// const navMenu = document.querySelector("#nav-menu");
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#nav-menu");
+const close = document.querySelector("#close");
 
-// hamburger.addEventListener("click", function () {
-//   hamburger.classList.toggle("hamburger-active");
-//   navMenu.classList.toggle("hidden");
-// });
+hamburger.addEventListener("click", function () {
+  navMenu.classList.toggle("hidden");
+});
 
+close.addEventListener("click", function () {
+  navMenu.classList.toggle("hidden");
+});
+
+// Accordion
 const accordionHeaders = document.querySelectorAll(".accordion-header");
 
 accordionHeaders.forEach((accordionHeader) => {
@@ -38,6 +43,7 @@ accordionHeaders.forEach((accordionHeader) => {
   });
 });
 
+//Carousel
 const prevIcon = '<i class="bi bi-chevron-left owlIcon"/>';
 const nextIcon = '<i class="bi bi-chevron-right owlIcon"/>';
 
